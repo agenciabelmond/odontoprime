@@ -2,23 +2,23 @@ const services = [
   {
     name: "Ortodontia",
     description:
-      "Aparelhos fixos e alinhadores invisiveis para um sorriso perfeito e alinhado.",
+      "Aparelhos fixos e alinhadores invisíveis para um sorriso perfeito e alinhado.",
     image: "\ortodontia.png",
   },
   {
     name: "Implante",
     description:
-      "Implantes de ultima geracao com seguranca, conforto e resultado natural.",
+      "Implantes de ultima geração com segurança, conforto e resultado natural.",
     image: "\implanteprime.png",
   },
   {
     name: "Clareamento",
     description:
-      "Clareamento a laser e caseiro para dentes mais brancos e saudaveis.",
+      "Clareamento a laser e caseiro para dentes mais brancos e saudáveis.",
     image: "\clareamento-dental.png",
   },
   {
-    name: "Tratamento Clinico",
+    name: "Tratamento Clínico",
     description:
       "Consultas, limpezas e tratamentos preventivos para toda a familia.",
     image: "\clinico.png",

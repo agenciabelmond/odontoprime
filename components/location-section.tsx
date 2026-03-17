@@ -52,9 +52,9 @@ export function LocationSection() {
                     Horário de Funcionamento
                   </h3>
                   <p className="mt-1 leading-relaxed text-gray-300">
-                    Segunda a Sexta: 9h as 18h
+                    Segunda à Sexta: 9h as 18h
                     <br />
-                    Sábado: 9h as 13h
+                    Sábado: 9h às 13h
                   </p>
                 </div>
               </div>

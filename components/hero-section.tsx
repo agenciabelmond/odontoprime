@@ -68,7 +68,7 @@ export function HeroSection() {
   className="inline-flex items-center gap-3 rounded-full bg-emerald-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all hover:brightness-110 hover:shadow-emerald-500/50 sm:text-lg"
 >
   <MessageCircle className="h-5 w-5" />
-  Falar com o Especialista
+  Falar com o especialista
 </a>
             </div>
 
