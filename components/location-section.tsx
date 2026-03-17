@@ -67,7 +67,7 @@ export function LocationSection() {
                 <div>
                   <h3 className="text-lg font-bold text-[#e0b76a]">Contato</h3>
                   <p className="mt-1 leading-relaxed text-gray-300">
-                    WhatsApp: (21) 96690-0630
+                    WhatsApp: (21) 
 
                   </p>
                 </div>
