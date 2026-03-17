@@ -21,7 +21,7 @@ const faqs = [
   {
     question: "Quais os benefícios dos implantes dentários?",
     answer:
-      "O implante imita a raiz do dente e recebe uma coroa que parece um dente real. O resultado fica muito semelhante aos dentes naturais.",
+      "Um sorriso natural e bonito, perfeitamente integrado ao osso e à gengiva, proporcionando harmonia estética. Além disso, há uma melhora significativa na mastigação e na digestão, contribuindo para a saúde geral do organismo. O tratamento também promove aumento da autoestima e da confiança, tanto na vida pessoal quanto profissional. A fala se torna mais clara e segura, com a restauração adequada da fonética. Tudo isso resulta em mais qualidade de vida, permitindo sorrir, comer e falar sem constrangimentos.",
   },
     {
     question: "Qual o valor da consulta?",
