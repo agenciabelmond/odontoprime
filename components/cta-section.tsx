@@ -34,12 +34,6 @@ export function CtaSection() {
               Falar com o Especialista
             </a>
 
-            <a
-              href="tel:+552133333333"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:border-[#e0b76a] hover:text-[#e0b76a] sm:text-lg"
-            >
-              Ligar Agora
-            </a>
 
           </div>
 
