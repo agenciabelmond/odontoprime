@@ -44,7 +44,7 @@ export function FaqSection() {
           </h2>
 
           <p className="mt-3 text-white/60">
-            Tire suas dúvidas sobre nossos serviços e atendimento.
+            Tire suas dúvidas sobre nossos serviços e atendimentos.
           </p>
         </div>
 
