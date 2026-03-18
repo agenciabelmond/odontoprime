@@ -67,14 +67,14 @@ export function LocationSection() {
                 <div>
                   <h3 className="text-lg font-bold text-[#e0b76a]">Contato</h3>
                   <p className="mt-1 leading-relaxed text-gray-300">
-                    WhatsApp: (21) 
+                    WhatsApp: (21) 96690 - 0630
 
                   </p>
                 </div>
               </div>
 
               <a
-                href="https://wa.me/5521999999999"
+                href="https://wa.me/+555521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 rounded-full bg-emerald-500 px-8 py-4 text-base font-semibold text-white shadow-lg shadow-emerald-500/30 transition-all hover:brightness-110 sm:text-lg"

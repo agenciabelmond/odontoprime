@@ -2,15 +2,15 @@
 
 const images = [
   {
-    src: "/placeholder.svg?height=400&width=400",
-    alt: "Atendimento Odonto Prime",
+    src: "\consultorioprime.jpg",
+    alt: "Consultório Odonto Prime",
   },
   {
-    src: "/placeholder.svg?height=400&width=400",
+    src: "/recepcao.jpg",
     alt: "Tecnologia moderna Odonto Prime",
   },
   {
-    src: "/placeholder.svg?height=400&width=400",
+    src: "/corredor.jpeg",
     alt: "Consultório sofisticado Odonto Prime",
   },
 ]

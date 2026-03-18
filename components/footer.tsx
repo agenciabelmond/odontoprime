@@ -62,15 +62,7 @@ export function Footer() {
             <ul className="mt-4 flex flex-col gap-3">
               <li className="flex items-center gap-2 text-sm text-primary-foreground/60">
                 <Phone className="h-4 w-4 text-gold-vivid" />
-                
-              </li>
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/60">
-                <Phone className="h-4 w-4 text-gold-vivid" />
-            
-              </li>
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/60">
-                <Mail className="h-4 w-4 text-gold-vivid" />
-                contato@odontoprime.com.br
+                ( 21 ) 9669 - 00630
               </li>
             </ul>
           </div>
@@ -89,15 +81,25 @@ export function Footer() {
               </span>
             </div>
 
-            <div className="mt-6 flex gap-4">
-              <a
-                href="#"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 transition-colors hover:bg-gold-vivid hover:text-white"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
+            <div className="mt-6 flex items-center gap-3">
+  <a
+    href="https://www.instagram.com/clinica_odonto_prime"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-3 group"
+    aria-label="Instagram"
+  >
+    {/* Ícone */}
+    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 transition-all group-hover:bg-gold-vivid group-hover:text-white">
+      <Instagram className="h-5 w-5" />
+    </div>
+
+    {/* Arroba */}
+    <span className="text-sm text-primary-foreground/60 transition-colors group-hover:text-gold-vivid">
+      @clinica_odonto_prime
+    </span>
+  </a>
+</div>
           </div>
         </div>
 

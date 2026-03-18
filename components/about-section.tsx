@@ -9,7 +9,7 @@ export function AboutSection() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-3xl">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src="\logoescada.png"
                 alt="Equipe Odonto Prime"
                 className="h-full w-full object-cover"
               />

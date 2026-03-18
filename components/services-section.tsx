@@ -3,27 +3,31 @@ const services = [
     name: "Ortodontia",
     description:
       "Aparelhos fixos e alinhadores invisíveis para um sorriso perfeito e alinhado.",
-    image: "\ortodontia.png",
+    image: "/ortodontia.png",
+    whatsapp: "https://wa.me/+555521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20ortodontia."
   },
   {
     name: "Implante",
     description:
       "Implantes de ultima geração com segurança, conforto e resultado natural.",
-    image: "\implanteprime.png",
+    image: "/implanteprime.png",
+    whatsapp: "https://wa.me/+555521966900630?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20implantes"
   },
   {
     name: "Clareamento",
     description:
       "Clareamento a laser e caseiro para dentes mais brancos e saudáveis.",
-    image: "\clareamento-dental.png",
+    image: "/clareamento-dental.png",
+    whatsapp: "https://wa.me/+5521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20clareamento"
   },
   {
     name: "Tratamento Clínico",
     description:
       "Consultas, limpezas e tratamentos preventivos para toda a familia.",
-    image: "\clinico.png",
+    image: "/clinico.png",
+    whatsapp: "https://wa.me/+5521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tratamentos%20cl%C3%ADnicos."
   },
-]
+];
 
 export function ServicesSection() {
   return (
@@ -54,21 +58,23 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.name}
-              className="group relative overflow-hidden rounded-3xl bg-[#16181c] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(224,183,106,0.15)]"
+              className="group relative overflow-hidden rounded-3xl bg-[#16181c]
+              transition-all duration-500
+              -translate-y-2 shadow-[0_0_30px_rgba(224,183,106,0.15)]
+              hover:-translate-y-4 hover:scale-[1.02]
+              hover:shadow-[0_0_50px_rgba(224,183,106,0.35)]"
             >
-              {/* Decorative Border Effect */}
-              <div className="absolute -bottom-3 -right-3 -z-10 h-full w-full rounded-3xl border-2 border-[#e0b76a]/20 transition-all duration-500 group-hover:border-[#e0b76a]/40" />
+              <div className="pointer-events-none absolute inset-0 rounded-3xl bg-white/5 opacity-20 transition-opacity duration-500 group-hover:opacity-40" />
+              <div className="absolute -bottom-3 -right-3 -z-10 h-full w-full rounded-3xl border-2 border-[#e0b76a]/40 transition-all duration-500 group-hover:border-[#e0b76a]" />
 
-              {/* Image */}
               <div className="relative h-48 overflow-hidden sm:h-52 rounded-t-3xl">
                 <img
                   src={service.image}
                   alt={service.name}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="h-full w-full object-cover transition-transform duration-700 scale-105 group-hover:scale-115"
                 />
               </div>
 
-              {/* Text */}
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-white">
                   {service.name}
@@ -78,14 +84,19 @@ export function ServicesSection() {
                   {service.description}
                 </p>
 
-                <button className="mt-5 rounded-full bg-[#e0b76a] px-5 py-2 text-sm font-semibold text-black transition-all duration-300 hover:shadow-[0_0_15px_rgba(224,183,106,0.7)] hover:scale-105">
+                <a
+                  href={service.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-block rounded-full bg-[#e0b76a] px-5 py-2 text-sm font-semibold text-black transition-all duration-300 hover:shadow-[0_0_20px_rgba(224,183,106,0.9)] hover:scale-105"
+                >
                   Agendar
-                </button>
+                </a>
               </div>
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
