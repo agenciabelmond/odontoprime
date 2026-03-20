@@ -1,8 +1,8 @@
-import { MapPin, Phone, Mail, Instagram } from "lucide-react"
+import { MapPin, Phone, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer id="contato" className="bg-charcoal py-16 text-primary-foreground">
+    <footer id="contato" className="bg-[#5C0D1B] py-16 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           
@@ -10,8 +10,7 @@ export function Footer() {
           <div>
             <a href="#inicio" className="flex items-center gap-3">
               
-              {/* Logo Image */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-vivid p-2">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F5C25C]/80 p-2">
                 <img
                   src="/images/tooth-icon.png"
                   alt="Logo Odonto Prime"
@@ -20,11 +19,11 @@ export function Footer() {
               </div>
 
               <span className="text-lg font-bold tracking-tight">
-                Odonto<span className="text-gold-vivid">Prime</span>
+                Odonto<span className="text-[#F5C25C]">Prime</span>
               </span>
             </a>
 
-            <p className="mt-4 text-sm leading-relaxed text-primary-foreground/60">
+            <p className="mt-4 text-sm leading-relaxed text-white/70">
               Referência em odontologia no Rio de Janeiro. Tecnologia de ponta
               e atendimento humanizado.
             </p>
@@ -32,7 +31,7 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-gold-vivid">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#F5C25C]">
               Links Rápidos
             </h4>
             <ul className="mt-4 flex flex-col gap-3">
@@ -45,7 +44,7 @@ export function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-primary-foreground/60 transition-colors hover:text-gold-vivid"
+                    className="text-sm text-white/70 transition-colors hover:text-[#F5C25C]"
                   >
                     {link.label}
                   </a>
@@ -56,24 +55,24 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-gold-vivid">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#F5C25C]">
               Contato
             </h4>
             <ul className="mt-4 flex flex-col gap-3">
-              <li className="flex items-center gap-2 text-sm text-primary-foreground/60">
-                <Phone className="h-4 w-4 text-gold-vivid" />
-                ( 21 ) 9669 - 00630
+              <li className="flex items-center gap-2 text-sm text-white/70">
+                <Phone className="h-4 w-4 text-[#F5C25C]" />
+                (21) 96690-0630
               </li>
             </ul>
           </div>
 
           {/* Address */}
           <div>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-gold-vivid">
+            <h4 className="text-sm font-bold uppercase tracking-wider text-[#F5C25C]">
               Endereço
             </h4>
-            <div className="mt-4 flex items-start gap-2 text-sm text-primary-foreground/60">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold-vivid" />
+            <div className="mt-4 flex items-start gap-2 text-sm text-white/70">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#F5C25C]" />
               <span>
                 Estrada dos Bandeirantes, 5172
                 <br />
@@ -82,29 +81,27 @@ export function Footer() {
             </div>
 
             <div className="mt-6 flex items-center gap-3">
-  <a
-    href="https://www.instagram.com/clinica_odonto_prime"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-3 group"
-    aria-label="Instagram"
-  >
-    {/* Ícone */}
-    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary-foreground/10 text-primary-foreground/60 transition-all group-hover:bg-gold-vivid group-hover:text-white">
-      <Instagram className="h-5 w-5" />
-    </div>
+              <a
+                href="https://www.instagram.com/clinica_odonto_prime"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 group"
+                aria-label="Instagram"
+              >
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white/70 transition-all group-hover:bg-[#F5C25C] group-hover:text-[#5C0D1B]">
+                  <Instagram className="h-5 w-5" />
+                </div>
 
-    {/* Arroba */}
-    <span className="text-sm text-primary-foreground/60 transition-colors group-hover:text-gold-vivid">
-      @clinica_odonto_prime
-    </span>
-  </a>
-</div>
+                <span className="text-sm text-white/70 transition-colors group-hover:text-[#F5C25C]">
+                  @clinica_odonto_prime
+                </span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-primary-foreground/10 pt-8 text-center">
-          <p className="text-sm text-primary-foreground/40">
+        <div className="mt-12 border-t border-white/10 pt-8 text-center">
+          <p className="text-sm text-white/40">
             © 2026 Odonto Prime. Todos os direitos reservados.
           </p>
         </div>

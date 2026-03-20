@@ -23,7 +23,7 @@ const faqs = [
     answer:
       "Um sorriso natural e bonito, perfeitamente integrado ao osso e à gengiva, proporcionando harmonia estética. Além disso, há uma melhora significativa na mastigação e na digestão, contribuindo para a saúde geral do organismo. O tratamento também promove aumento da autoestima e da confiança, tanto na vida pessoal quanto profissional. A fala se torna mais clara e segura, com a restauração adequada da fonética. Tudo isso resulta em mais qualidade de vida, permitindo sorrir, comer e falar sem constrangimentos.",
   },
-    {
+  {
     question: "Qual o valor da consulta?",
     answer:
       "O valor da nossa consulta é totalmente gratuito. Aqui, você recebe um atendimento personalizado e humanizado, onde analisamos seu caso com cuidado e atenção, entendendo exatamente suas necessidades e expectativas.",
@@ -32,18 +32,18 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section className="bg-gradient-to-br from-[#111315] via-[#16181c] to-[#0f1113] py-20 sm:py-24">
+    <section className="bg-[#5C0D1B] py-20 sm:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-widest text-[#e0b76a]">
+          <span className="text-sm font-semibold uppercase tracking-widest text-[#F5C25C]">
             FAQ
           </span>
 
-          <h2 className="mt-3 font-serif text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-3 font-serif text-3xl font-bold text-[#F8F4EC] sm:text-4xl">
             Perguntas Frequentes
           </h2>
 
-          <p className="mt-3 text-white/60">
+          <p className="mt-3 text-[#F8F4EC]/80">
             Tire suas dúvidas sobre nossos serviços e atendimentos.
           </p>
         </div>
@@ -54,13 +54,13 @@ export function FaqSection() {
               <AccordionItem
                 key={i}
                 value={`item-${i}`}
-                className="rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm px-6 transition-all duration-300 data-[state=open]:border-[#e0b76a]/40 data-[state=open]:shadow-lg"
+                className="rounded-xl border border-[#F5C25C]/20 bg-[#F8F4EC]/5 backdrop-blur-sm px-6 transition-all duration-300 data-[state=open]:border-[#F5C25C]/60 data-[state=open]:shadow-lg"
               >
-                <AccordionTrigger className="text-left text-sm font-semibold text-white hover:text-[#e0b76a] sm:text-base [&[data-state=open]]:text-[#e0b76a]">
+                <AccordionTrigger className="text-left text-sm font-semibold text-[#F8F4EC] hover:text-[#F5C25C] sm:text-base [&[data-state=open]]:text-[#F5C25C]">
                   {faq.question}
                 </AccordionTrigger>
 
-                <AccordionContent className="text-sm leading-relaxed text-white/80">
+                <AccordionContent className="text-sm leading-relaxed text-[#F8F4EC]/80">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
