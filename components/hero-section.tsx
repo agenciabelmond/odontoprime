@@ -25,7 +25,7 @@ export function HeroSection() {
             >
               {"Referência em "}
               <span className="text-[#F5C25C]">
-                Odontologia
+                Osdontologia
               </span>
               {" no Rio de Janeiro"}
             </h1>

@@ -131,7 +131,7 @@ export function LocationSection() {
                     </h3>
 
                     <p className="mt-1 leading-relaxed text-gray-300">
-                      Segunda à Sexta: 9h às 18h
+                      Segunda a sexta: 9h às 18h
                       <br />
                       Sábado: 9h às 13h
                     </p>

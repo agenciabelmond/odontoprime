@@ -9,7 +9,7 @@ const services = [
   {
     name: "Implante",
     description:
-      "Implantes de ultima geração com segurança, conforto e resultado natural.",
+      "Implantes de última geração com segurança, conforto e resultado natural.",
     image: "/implanteprime.png",
     whatsapp: "https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
   },
@@ -23,7 +23,7 @@ const services = [
   {
     name: "Tratamento Clínico",
     description:
-      "Consultas, limpezas e tratamentos preventivos para toda a familia.",
+      "Consultas, limpezas e tratamentos preventivos para toda a família.",
     image: "/clinico.png",
     whatsapp: "https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
   },
