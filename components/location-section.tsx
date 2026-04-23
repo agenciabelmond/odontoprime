@@ -1,25 +1,21 @@
 "use client"
+
 import { MapPin, Clock, Phone, Play, X } from "lucide-react"
 import { useRef, useState } from "react"
 
 export function LocationSection() {
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const modalVideoRef = useRef<HTMLVideoElement>(null)
+  const iframeRef = useRef<HTMLIFrameElement>(null)
 
   const [openVideo, setOpenVideo] = useState(false)
   const [startedMobile, setStartedMobile] = useState(false)
 
-  const videoSrc = "/estrutura.mp4"
+  // coloque aqui o ID do vídeo do YouTube
+  const youtubeId = "_ejxBhwarB4"
 
-  const handleMobilePlay = async () => {
-    if (!videoRef.current) return
+  const thumbnail = `https://img.youtube.com/vi/_ejxBhwarB4/hqdefault.jpg`
 
-    try {
-      setStartedMobile(true)
-      await videoRef.current.play()
-    } catch (error) {
-      console.error(error)
-    }
+  const handleMobilePlay = () => {
+    setStartedMobile(true)
   }
 
   const handleDesktopPlay = () => {
@@ -27,11 +23,6 @@ export function LocationSection() {
   }
 
   const closeVideo = () => {
-    if (modalVideoRef.current) {
-      modalVideoRef.current.pause()
-      modalVideoRef.current.currentTime = 0
-    }
-
     setOpenVideo(false)
   }
 
@@ -39,13 +30,13 @@ export function LocationSection() {
     <>
       <section id="localizacao" className="bg-[#1a0a0d] py-16 sm:py-20">
         <div className="container mx-auto px-4">
-          <div className="rounded-3xl bg-gradient-to-br from-[#3a141a] via-[#4a1c22] to-[#2b0f14] border border-[#d4af37]/20 shadow-[0_0_40px_rgba(0,0,0,0.6)] px-6 py-12 sm:px-10">
+          <div className="rounded-3xl border border-[#d4af37]/20 bg-gradient-to-br from-[#3a141a] via-[#4a1c22] to-[#2b0f14] px-6 py-12 shadow-[0_0_40px_rgba(0,0,0,0.6)] sm:px-10">
             <div className="mx-auto max-w-3xl text-center">
               <span className="text-sm font-semibold uppercase tracking-widest text-[#d4af37]">
                 Localização
               </span>
 
-              <h2 className="mt-3 font-serif text-3xl font-bold text-white sm:text-4xl drop-shadow-[0_0_8px_rgba(212,175,55,0.6)]">
+              <h2 className="mt-3 font-serif text-3xl font-bold text-white drop-shadow-[0_0_8px_rgba(212,175,55,0.6)] sm:text-4xl">
                 Conheça a Odonto Prime
               </h2>
             </div>
@@ -55,45 +46,49 @@ export function LocationSection() {
               <div className="flex justify-center lg:hidden">
                 <div className="relative w-full max-w-[340px] overflow-hidden rounded-3xl border border-[#d4af37]/20 bg-black shadow-2xl">
                   <div className="relative aspect-[9/16]">
-                    <video
-                      ref={videoRef}
-                      className="h-full w-full object-cover"
-                      preload="metadata"
-                      playsInline
-                      controls={startedMobile}
-                    >
-                      <source src={videoSrc} type="video/mp4" />
-                    </video>
+                    {!startedMobile ? (
+                      <>
+                        <img
+                          src={thumbnail}
+                          alt="Vídeo Odonto Prime"
+                          className="h-full w-full object-cover"
+                        />
 
-                    {!startedMobile && (
-                      <button
-                        onClick={handleMobilePlay}
-                        className="absolute inset-0 flex items-center justify-center bg-black/20"
-                      >
-                        <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#d4af37] text-[#2b0f14] shadow-[0_0_30px_rgba(212,175,55,0.7)]">
-                          <Play className="ml-1 h-10 w-10 fill-current" />
-                        </div>
-                      </button>
+                        <button
+                          onClick={handleMobilePlay}
+                          className="absolute inset-0 flex items-center justify-center bg-black/30"
+                        >
+                          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#d4af37] text-[#2b0f14] shadow-[0_0_30px_rgba(212,175,55,0.7)]">
+                            <Play className="ml-1 h-10 w-10 fill-current" />
+                          </div>
+                        </button>
+                      </>
+                    ) : (
+                      <iframe
+                        className="h-full w-full"
+                        src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&playsinline=1`}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
                     )}
                   </div>
                 </div>
               </div>
 
               {/* DESKTOP */}
-              <div className="hidden lg:flex justify-center">
+              <div className="hidden justify-center lg:flex">
                 <button
                   type="button"
                   onClick={handleDesktopPlay}
                   className="group relative h-[360px] w-[360px] overflow-hidden rounded-3xl border border-[#d4af37]/20 bg-black shadow-2xl"
                 >
-                  <video
-                    className="h-full w-full object-cover"
-                    muted
-                    playsInline
-                    preload="metadata"
-                  >
-                    <source src={videoSrc} type="video/mp4" />
-                  </video>
+                  <img
+                    src={thumbnail}
+                    alt="Vídeo Odonto Prime"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
 
                   <div className="absolute inset-0 bg-black/30" />
 
@@ -186,15 +181,15 @@ export function LocationSection() {
 
           <div className="w-full max-w-[420px] overflow-hidden rounded-3xl shadow-2xl">
             <div className="relative aspect-[9/16] bg-black">
-              <video
-                ref={modalVideoRef}
-                className="h-full w-full object-cover"
-                controls
-                autoPlay
-                playsInline
-              >
-                <source src={videoSrc} type="video/mp4" />
-              </video>
+              <iframe
+                ref={iframeRef}
+                className="h-full w-full"
+                src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&playsinline=1`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
