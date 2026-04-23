@@ -5,15 +5,15 @@ import { useState } from "react"
 
 const videos = [
   {
-    src: "/ortodontia.mp4",
+    youtubeId: "bNrJOadOO5c",
     alt: "Ortodontia Odonto Prime",
   },
   {
-    src: "/procedimentos.mp4",
+    youtubeId: "yyBzWXsjIPI",
     alt: "Odonto Prime",
   },
   {
-    src: "/implante.mp4",
+    youtubeId: "E5HEbotIp_I",
     alt: "Implante Odonto Prime",
   },
 ]
@@ -21,8 +21,8 @@ const videos = [
 export function GallerySection() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
 
-  const openVideo = (src: string) => {
-    setSelectedVideo(src)
+  const openVideo = (id: string) => {
+    setSelectedVideo(id)
   }
 
   const closeVideo = () => {
@@ -49,37 +49,33 @@ export function GallerySection() {
             </p>
           </div>
 
-          {/* Grid de vídeos */}
+          {/* Grid */}
           <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {videos.map((video, i) => (
               <button
                 key={i}
                 type="button"
-                onClick={() => openVideo(video.src)}
+                onClick={() => openVideo(video.youtubeId)}
                 className="group relative overflow-hidden rounded-2xl shadow-[0_0_30px_rgba(245,194,92,0.15)]"
               >
                 <div className="relative aspect-square bg-black">
-                  <video
+                  <img
+                    src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
+                    alt={video.alt}
+                    onError={(e) => {
+                      e.currentTarget.src =
+                        "https://img.youtube.com/vi/default.jpg"
+                    }}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    muted
-                    playsInline
-                    preload="metadata"
-                  >
-                    <source src={video.src} type="video/mp4" />
-                  </video>
+                  />
 
-                  {/* Overlay */}
                   <div className="absolute inset-0 bg-[#5C0D1B]/35 transition duration-500 group-hover:bg-[#5C0D1B]/20" />
 
-                  {/* Play */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="flex h-20 w-20 items-center justify-center rounded-full bg-[#F5C25C] text-[#5C0D1B] shadow-[0_0_30px_rgba(245,194,92,0.5)] transition duration-300 group-hover:scale-110">
                       <Play className="ml-1 h-10 w-10 fill-current" />
                     </div>
                   </div>
-
-                  {/* Glow */}
-                  <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-transparent transition duration-500 group-hover:ring-[#F5C25C]/50" />
                 </div>
               </button>
             ))}
@@ -87,7 +83,7 @@ export function GallerySection() {
         </div>
       </section>
 
-      {/* Modal vídeo */}
+      {/* Modal */}
       {selectedVideo && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 px-4">
           <button
@@ -100,14 +96,14 @@ export function GallerySection() {
 
           <div className="w-full max-w-[420px] overflow-hidden rounded-3xl shadow-2xl">
             <div className="relative aspect-[9/16] bg-black">
-              <video
-                className="h-full w-full object-cover"
-                controls
-                autoPlay
-                playsInline
-              >
-                <source src={selectedVideo} type="video/mp4" />
-              </video>
+              <iframe
+                className="h-full w-full"
+                src={`https://www.youtube-nocookie.com/embed/${selectedVideo}?autoplay=1&playsinline=1`}
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
