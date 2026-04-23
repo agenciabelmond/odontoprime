@@ -24,9 +24,9 @@ const faqs = [
       "Um sorriso natural e bonito, perfeitamente integrado ao osso e à gengiva, proporcionando harmonia estética. Além disso, há uma melhora significativa na mastigação e na digestão, contribuindo para a saúde geral do organismo. O tratamento também promove aumento da autoestima e da confiança, tanto na vida pessoal quanto profissional. A fala se torna mais clara e segura, com a restauração adequada da fonética. Tudo isso resulta em mais qualidade de vida, permitindo sorrir, comer e falar sem constrangimentos.",
   },
   {
-    question: "Qual o valor da consulta?",
+    question: "Com que idade posso usar aparelho ortodôntico?",
     answer:
-      "O valor da nossa consulta é totalmente gratuito. Aqui, você recebe um atendimento personalizado e humanizado, onde analisamos seu caso com cuidado e atenção, entendendo exatamente suas necessidades e expectativas.",
+      "O aparelho pode ser usado em qualquer idade, desde crianças até adultos, desde que haja indicação após avaliação odontológica. O ideal é realizar uma consulta para identificar o melhor momento para iniciar o tratamento",
   },
 ]
 

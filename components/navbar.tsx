@@ -52,7 +52,7 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             {/* Instagram em dourado */}
             <a
-              href="https://www.instagram.com/clinica_odonto_prime"
+              href="https://www.instagram.com/odontoprimerio"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center text-[#F5C25C] transition-all hover:text-white"
@@ -102,7 +102,7 @@ export function Navbar() {
           <div className="flex flex-col gap-3 px-6 pb-4">
             {/* Instagram em dourado */}
             <a
-              href="https://www.instagram.com/clinica_odonto_prime"
+              href="https://www.instagram.com/odontoprimerio"
               target="_blank"
               rel="noopener noreferrer"
               className="flex h-12 w-12 items-center justify-center text-[#F5C25C] transition-all hover:text-white"

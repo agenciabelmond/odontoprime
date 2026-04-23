@@ -93,7 +93,7 @@ export function Footer() {
                 </div>
 
                 <span className="text-sm text-white/70 transition-colors group-hover:text-[#F5C25C]">
-                  @clinica_odonto_prime
+                  @odontoprimerio
                 </span>
               </a>
             </div>
