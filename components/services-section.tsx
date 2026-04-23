@@ -4,28 +4,28 @@ const services = [
     description:
       "Aparelhos fixos e alinhadores invisíveis para um sorriso perfeito e alinhado.",
     image: "/ortodontia.png",
-    whatsapp: "https://wa.me/+555521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20ortodontia."
+    whatsapp: "https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
   },
   {
     name: "Implante",
     description:
       "Implantes de ultima geração com segurança, conforto e resultado natural.",
     image: "/implanteprime.png",
-    whatsapp: "https://wa.me/+555521966900630?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20implantes"
+    whatsapp: "https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
   },
   {
     name: "Clareamento",
     description:
       "Clareamento a laser e caseiro para dentes mais brancos e saudáveis.",
     image: "/clareamento-dental.png",
-    whatsapp: "https://wa.me/+5521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20clareamento"
+    whatsapp: "https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
   },
   {
     name: "Tratamento Clínico",
     description:
       "Consultas, limpezas e tratamentos preventivos para toda a familia.",
     image: "/clinico.png",
-    whatsapp: "https://wa.me/+5521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20tratamentos%20cl%C3%ADnicos."
+    whatsapp: "https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
   },
 ];
 

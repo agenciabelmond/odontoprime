@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/+555521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+      href="https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar pelo WhatsApp"

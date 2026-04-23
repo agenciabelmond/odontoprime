@@ -37,7 +37,7 @@ export function HeroSection() {
             {/* Botão CTA */}
             <div className="mt-8">
 <a
-  href="https://wa.me/+555521966900630?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+  href="https://wa.me/+5521966416593?text=%5BN%C3%83O%20APAGAR%5DOl%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
   target="_blank"
   rel="noopener noreferrer"
   className="inline-flex items-center gap-3 rounded-full bg-[#F5C25C] px-8 py-4 text-base font-semibold text-[#5C0D1B] shadow-md shadow-black/20 transition-all duration-300 hover:shadow-[0_0_20px_#F5C25C] hover:brightness-125 sm:text-lg"
@@ -67,7 +67,7 @@ export function HeroSection() {
           <div className="relative lg:order-2">
             <div className="relative overflow-hidden rounded-3xl shadow-lg shadow-black/20 mt-4 lg:mt-0">
               <img
-                src="sorrisosite.png"
+                src="fotomonique2.jpeg"
                 alt="Interior moderno da clínica odontológica Odonto Prime"
                 className="h-[320px] w-full object-cover sm:h-[420px] lg:h-[500px] rounded-3xl"
               />

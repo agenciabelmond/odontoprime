@@ -61,7 +61,7 @@ export function Footer() {
             <ul className="mt-4 flex flex-col gap-3">
               <li className="flex items-center gap-2 text-sm text-white/70">
                 <Phone className="h-4 w-4 text-[#F5C25C]" />
-                (21) 96690-0630
+                21 96641-6593
               </li>
             </ul>
           </div>
